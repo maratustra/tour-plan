@@ -518,13 +518,16 @@ template {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
+  .logo {
+    margin-left: 20px;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 16px;
     height: 11px;
-    padding: 0;
+    padding: 0 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
