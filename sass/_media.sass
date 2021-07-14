@@ -45,7 +45,7 @@
       flex-direction: row
   .booking
     width: 340px
-  .map
+  .location
     width: 340px
 
 @media (max-width: 768px)
@@ -86,17 +86,23 @@
       &__offer
         order: -1
         margin-left: 0
-  .stars
-    flex-basis: auto
-  .hotel
     &-slider
       height: 350px
+      &__button
+        &--next
+          width: 9px
+          height: 17px
+        &--prev
+          width: 9px
+          height: 17px
     &-right
       flex-direction: column
       min-height: 450px
+  .stars
+    flex-basis: auto
   .booking
     width: 100%
-  .map
+  .location
     width: 100%
 
 @media (max-width: 576px)
@@ -108,3 +114,15 @@
     &-slider
       height: 250px
       margin-bottom: 20px
+      &__button
+        &--next
+          width: 4px
+          height: 8px
+        &--prev
+          width: 4px
+          height: 8px
+
+@media (max-width: 480px)
+  .hotel
+    &-slider
+      min-height: 179px

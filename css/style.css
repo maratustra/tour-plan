@@ -790,12 +790,15 @@ template {
   cursor: pointer;
 }
 
-.map {
-  width: 347px;
-  height: 213px;
+.location {
   background-color: black;
   border-radius: 10px;
   overflow: hidden;
+}
+
+#map {
+  width: 347px;
+  height: 213px;
 }
 
 @media (max-width: 1200px) {
@@ -864,7 +867,7 @@ template {
   .booking {
     width: 340px;
   }
-  .map {
+  .location {
     width: 340px;
   }
 }
@@ -927,12 +930,16 @@ template {
             order: -1;
     margin-left: 0;
   }
-  .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-  }
   .hotel-slider {
     height: 350px;
+  }
+  .hotel-slider__button--next {
+    width: 9px;
+    height: 17px;
+  }
+  .hotel-slider__button--prev {
+    width: 9px;
+    height: 17px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
@@ -941,10 +948,14 @@ template {
             flex-direction: column;
     min-height: 450px;
   }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
   .booking {
     width: 100%;
   }
-  .map {
+  .location {
     width: 100%;
   }
 }
@@ -959,6 +970,20 @@ template {
   .hotel-slider {
     height: 250px;
     margin-bottom: 20px;
+  }
+  .hotel-slider__button--next {
+    width: 4px;
+    height: 8px;
+  }
+  .hotel-slider__button--prev {
+    width: 4px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotel-slider {
+    min-height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
