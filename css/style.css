@@ -791,14 +791,11 @@ template {
 }
 
 .location {
+  width: 347px;
+  height: 213px;
   background-color: black;
   border-radius: 10px;
   overflow: hidden;
-}
-
-#map {
-  width: 347px;
-  height: 213px;
 }
 
 @media (max-width: 1200px) {
@@ -973,17 +970,17 @@ template {
   }
   .hotel-slider__button--next {
     width: 4px;
-    height: 8px;
+    height: 13px;
   }
   .hotel-slider__button--prev {
     width: 4px;
-    height: 8px;
+    height: 13px;
   }
 }
 
 @media (max-width: 480px) {
   .hotel-slider {
-    min-height: 179px;
+    height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
