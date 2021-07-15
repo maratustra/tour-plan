@@ -835,6 +835,7 @@ template {
 }
 
 .newsletter-title {
+  max-width: 242px;
   color: #fff;
   font-weight: 300;
   font-size: 24px;
@@ -850,7 +851,7 @@ template {
 
 .newsletter .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -870,6 +871,7 @@ template {
 
 .newsletter .subscribe__button {
   position: absolute;
+  max-width: 65px;
   min-width: 65px;
   right: 0;
   top: 0;
