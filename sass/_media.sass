@@ -48,6 +48,10 @@
     width: 340px
   .location
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 
 @media (max-width: 768px)
   .container
@@ -116,6 +120,27 @@
         margin-bottom: 37px
   .subscribe
     min-width: 100%
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::before,
+        &::after
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 35%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+        &--next
+          right: 35%
+          margin-right: -65px
+          transform: translate(50%, 0)
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px
 
 @media (max-width: 576px)
   .container
@@ -145,8 +170,20 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+  .reviews
+    &__title
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
 
 @media (max-width: 480px)
   .hotel
     &-slider
       height: 179px
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          left: 40%
+        &--next
+          right: 40%
