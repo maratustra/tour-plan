@@ -1095,6 +1095,11 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1219,11 +1224,6 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
-  .reviews__title {
-    margin-bottom: 50px;
-    font-size: 30px;
-    line-height: 38px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -1277,6 +1277,9 @@ template {
   }
   .reviews-slider__button--next {
     right: 40%;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

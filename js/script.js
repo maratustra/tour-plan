@@ -24,6 +24,7 @@ const hotelSwiper = new Swiper('.hotel-slider', {
 const reviewsSwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
+  autoHeight: true,
 
   // Navigation arrows
   navigation: {
@@ -38,7 +39,7 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
   },
 });
 
-$('.parallax-window').parallax({ imageSrc: '../img/newsletter_bg.jfif' });
+$('.parallax-window').parallax({ imageSrc: 'img/newsletter_bg.jfif' });
 
 // // Создание интеркативной карты Яндекс API
 // ymaps.ready(init);
