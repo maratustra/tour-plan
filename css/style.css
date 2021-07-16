@@ -989,11 +989,13 @@ template {
 }
 
 .reviews-slider__username {
+  max-width: 537px;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  text-align: center;
 }
 
 .reviews-slider__date {
