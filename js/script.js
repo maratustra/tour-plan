@@ -1,3 +1,12 @@
+let menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', function () {
+  console.log('Click');
+  document
+    .querySelector('.navbar-bottom')
+    .classList.toggle('navbar-bottom--visible');
+});
+
 const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
