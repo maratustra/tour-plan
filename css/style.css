@@ -1815,6 +1815,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 95%;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -1824,6 +1825,7 @@ template {
   }
   .navbar__search {
     margin-left: 0;
+    margin-bottom: 25px;
   }
   .menu-button {
     display: -webkit-box;
@@ -2083,6 +2085,9 @@ template {
   }
   .footer__button {
     width: 50%;
+  }
+  .search__input {
+    width: 245px;
   }
 }
 
