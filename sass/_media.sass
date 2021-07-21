@@ -157,14 +157,14 @@
         display: block
     &-menu
       flex-direction: column
+      // height: 50%
       width: 95%
-      overflow: scroll
+      overflow: auto
       &__item
         margin-bottom: 20px
         &--mobile
           &--visible
             display: block
-
     &__search
       margin-left: 0
       margin-bottom: 25px
@@ -260,9 +260,6 @@
   .footer
     &__input
       flex-basis: 100%
-    &__disclaimer
-      &-ul
-        text-align: center
 
 @media (max-width: 576px)
   .container

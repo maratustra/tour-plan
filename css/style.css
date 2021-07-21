@@ -1889,7 +1889,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 95%;
-    overflow: scroll;
+    overflow: auto;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -2031,9 +2031,6 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-  .footer__disclaimer-ul {
-    text-align: center;
   }
 }
 
