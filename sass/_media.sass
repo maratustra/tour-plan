@@ -58,6 +58,11 @@
     width: 340px
   .location
     width: 340px
+
+  .packages
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+
   .reviews
     &-slider
       &__item
@@ -223,6 +228,71 @@
     width: 100%
   .location
     width: 100%
+
+  .packages
+    padding-top: 0
+    &-grid
+      column-gap: 15px
+      row-gap: 20px
+  .main
+    &-package
+      display: flex
+      flex-direction: column
+      &__left
+        height: 270px
+        overflow: hidden
+        border-radius: 8px
+      &__banner
+        width: 100%
+        background-size: cover
+        background-position: center
+        object-fit: cover
+      &__offer
+        font-size: 10px
+      &__right
+        flex-wrap: wrap
+        padding: 25px 0 25px 25px
+        height: 280px
+      &__heading
+        line-height: 20px
+      &__paragraph
+        width: 265px
+        margin-bottom: 5px
+        line-height: 130%
+      &__room
+        margin-top: 0
+        margin-left: 50px
+      &__icon
+        margin-right: 0
+      &__price
+        margin-left: 50px
+        &-pricetag
+          margin-bottom: 14px
+        &-booknow
+          flex-direction: column
+  .package
+    height: 470px
+    &-sample
+      &__top
+        height: 210px
+      &__image
+        height: 210px
+      &__offer
+        font-size: 10px
+      &__info
+        padding: 22px 20px 20px 22px
+      &__heading
+        font-size: 20px
+        line-height: 20px
+      &__room
+        margin-top: 22px
+        margin-bottom: 27px
+      &__text
+        margin-bottom: 15px
+        font-size: 13px
+      &__icon
+        margin-right: 0
+
   .newsletter
     &-wrapper
       max-width: 576px
@@ -267,6 +337,7 @@
   .logo
     width: 99px
   .hotel
+    padding-bottom: 50px
     &-slider
       height: 250px
       margin-bottom: 20px
@@ -277,6 +348,74 @@
         &--prev
           width: 4px
           height: 13px
+  .packages
+    &__title
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+    &-grid
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  .main
+    &-package
+      max-width: 350px
+      width: 85%
+      height: 450px
+      &__left
+        height: 210px
+      &__banner
+        height: 210px
+      &__offer
+        padding: 4px 9px
+        font-size: 10px
+      &__right
+        flex-wrap: nowrap
+        padding: 22px 30px 30px 30px
+        //height: 280px
+      &__heading
+        font-size: 20px
+      &__paragraph
+        display: none
+      &__room
+        margin-top: 22px
+        margin-left: 0
+        margin-bottom: 27px
+      &__price
+        margin-left: 0
+        &-start
+          margin-bottom: 4px
+          font-size: 13px
+          line-height: 17px
+        &-pricetag
+          margin-bottom: 0
+        &-booknow
+          flex-direction: row
+      &__button
+        height: 38px
+        font-size: 13px
+        line-height: 18px
+  .stars
+    display: none
+  .package
+    width: 85%
+    height: 450px
+    &-sample
+      &__info
+        padding: 22px 30px 30px 30px
+      &__heading
+        font-size: 20px
+        line-height: 20px
+      &__room
+        margin-top: 22px
+        margin-bottom: 27px
+      &__text
+        margin-bottom: 9px
+        font-size: 13px
+      &__icon
+        margin-right: 0
+
   .newsletter
     padding: 76px 0 83px 0
     &-wrapper
@@ -357,6 +496,34 @@
   .hotel
     &-slider
       height: 179px
+
+  .main
+    &-package
+      &__room
+        margin-bottom: 10px
+      &__price
+        &-pricetag
+          font-size: 18px
+          line-height: 25px
+          margin-bottom: 10px
+        &-booknow
+          flex-direction: column
+  .prices
+    &__booknow
+      flex-direction: column
+    &__pricetag
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 10px
+  .package
+    &-sample
+      &__top
+        height: 180px
+      &__image
+        height: 180px
+      &__room
+        margin-bottom: 14px
+
   .reviews
     &-slider
       &__button
