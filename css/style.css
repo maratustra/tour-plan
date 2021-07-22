@@ -1883,6 +1883,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1893,7 +1894,6 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 95%;
-    overflow: auto;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
