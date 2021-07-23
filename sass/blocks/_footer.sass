@@ -5,7 +5,7 @@
   padding-bottom: 46px
   &-grid
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: repeat(4, minmax(min-content, 100%))
     column-gap: 20px
     row-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
@@ -34,7 +34,7 @@
     &-form
       grid-column: span 2
   &__legal
-    margin-left: 70px
+    margin-left: 30px
   &__form
     display: flex
     align-items: center
@@ -124,7 +124,7 @@
       font-weight: normal
       font-size: 12px
       line-height: 15px
-      margin-right: 20px
+      margin-right: 10px
     &-link
       text-decoration: none
       color: $light
