@@ -1768,6 +1768,9 @@ template {
   .card__title {
     max-width: 200px;
   }
+  .packages {
+    padding-top: 0;
+  }
   .packages-grid {
     max-width: 700px;
   }
@@ -2385,35 +2388,48 @@ template {
     height: 179px;
   }
   .packages-container {
-    width: 90%;
+    width: 85%;
   }
   .packages-grid {
     width: auto;
   }
+  .main-package {
+    max-width: 370px;
+    width: 100%;
+  }
   .main-package__room {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .main-package__price-pricetag {
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .main-package__price-booknow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-package__button {
+    margin-left: 60px;
   }
   .prices__booknow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .prices__pricetag {
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .prices__button {
+    margin-left: 60px;
+  }
+  .package-sample {
+    max-width: 370px;
+    width: 100%;
+    height: 450px;
   }
   .package-sample__top {
     height: 180px;
@@ -2422,7 +2438,8 @@ template {
     height: 180px;
   }
   .package-sample__room {
-    margin-bottom: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .reviews-slider__button--prev {
     left: 40%;
@@ -2441,6 +2458,48 @@ template {
   }
   .search__input {
     width: 245px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-package__button {
+    margin-left: inherit;
+  }
+  .main-package__room {
+    margin-bottom: 10px;
+  }
+  .main-package__price-booknow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-package__price-pricetag {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 12px;
+  }
+  .prices__booknow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prices__pricetag {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 12px;
+  }
+  .prices__button {
+    margin-left: inherit;
+  }
+  .package-sample__room {
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

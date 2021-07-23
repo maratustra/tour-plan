@@ -82,6 +82,7 @@
     &__title
       max-width: 200px
   .packages
+    padding-top: 0
     &-grid
       max-width: 700px
   .footer
@@ -498,36 +499,43 @@
       height: 179px
   .packages
     &-container
-      width: 90%
+      width: 85%
     &-grid
       width: auto
   .main
     &-package
+      max-width: 370px
+      width: 100%
       &__room
-        margin-bottom: 10px
+        margin-top: 20px
+        margin-bottom: 20px
       &__price
         &-pricetag
-          font-size: 18px
-          line-height: 25px
-          margin-bottom: 10px
+          align-self: center
         &-booknow
-          flex-direction: column
+          justify-content: flex-start
+      &__button
+        margin-left: 60px
   .prices
     &__booknow
-      flex-direction: column
+      justify-content: flex-start
     &__pricetag
-      font-size: 18px
-      line-height: 25px
-      margin-bottom: 10px
+      font-size: 24px
+      line-height: 30px
+    &__button
+      margin-left: 60px
   .package
     &-sample
+      max-width: 370px
+      width: 100%
+      height: 450px
       &__top
         height: 180px
       &__image
         height: 180px
       &__room
-        margin-bottom: 14px
-
+        margin-top: 30px
+        margin-bottom: 30px
   .reviews
     &-slider
       &__button
@@ -546,3 +554,34 @@
   .search
     &__input
       width: 245px
+
+@media (max-width: 380px)
+  .main
+    &-package
+      &__button
+        margin-left: inherit
+      &__room
+        margin-bottom: 10px
+      &__price
+        &-booknow
+          flex-direction: column
+        &-pricetag
+          align-self: baseline
+          font-size: 18px
+          line-height: 25px
+          margin-bottom: 12px
+  .prices
+    &__booknow
+      flex-direction: column
+    &__pricetag
+      align-self: baseline
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 12px
+    &__button
+      margin-left: inherit
+  .package
+    &-sample
+      &__room
+        margin-top: 18px
+        margin-bottom: 18px
