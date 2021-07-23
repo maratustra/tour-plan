@@ -1821,8 +1821,12 @@ template {
     grid-row: 4;
   }
   .footer__wrapper {
-    -ms-grid-columns: (100%)[2];
-        grid-template-columns: repeat(2, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .footer__disclaimer {
     display: -webkit-box;
@@ -2286,8 +2290,8 @@ template {
     width: 100%;
   }
   .footer-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     grid-row-gap: 30px;
     margin-bottom: 30px;
   }
