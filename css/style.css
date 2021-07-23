@@ -2380,6 +2380,12 @@ template {
   .hotel-slider {
     height: 179px;
   }
+  .packages-container {
+    width: 90%;
+  }
+  .packages-grid {
+    width: auto;
+  }
   .main-package__room {
     margin-bottom: 10px;
   }
