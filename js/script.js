@@ -1,82 +1,111 @@
-let menuButton = document.querySelector('.menu-button');
+$(document).ready(function () {
+  let menuButton = document.querySelector('.menu-button');
 
-menuButton.addEventListener('click', function () {
-  console.log('Click');
-  document
-    .querySelector('.navbar-bottom')
-    .classList.toggle('navbar-bottom--visible');
+  menuButton.addEventListener('click', function () {
+    console.log('Click');
+    document
+      .querySelector('.navbar-bottom')
+      .classList.toggle('navbar-bottom--visible');
+  });
+
+  const hotelSwiper = new Swiper('.hotel-slider', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.hotel-slider__button--next',
+      prevEl: '.hotel-slider__button--prev',
+    },
+
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+    },
+
+    // Keyboard Control Parameters
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+
+  const reviewsSwiper = new Swiper('.reviews-slider', {
+    // Optional parameters
+    loop: true,
+    autoHeight: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-slider__button--next',
+      prevEl: '.reviews-slider__button--prev',
+    },
+
+    // Keyboard Control Parameters
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+
+  $('.parallax-window').parallax({ imageSrc: 'img/newsletter/newsletter_bg.jfif' });
+
+  // Подключение Модальных окон
+
+  let modalButton = $('[data-toggle="modal"]');
+  let closeModalButton = $('.modal__close');
+
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+
+  function openModal() {
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
+  }
+
+  function closeModal(event) {
+
+    event.preventDefault();
+
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+  }
 });
 
-const hotelSwiper = new Swiper('.hotel-slider', {
-  // Optional parameters
-  loop: true,
+ // // Создание интеркативной карты Яндекс API
+  // ymaps.ready(init);
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
-  },
+  // function init() {
 
-  effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 30,
-    slideShadows: false,
-  },
+  //   var myMap = new ymaps.Map("map", {
 
-  // Keyboard Control Parameters
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
+  //     center: [7.573638, 79.803867], // Координаты центра карты
+  //     zoom: 10  // Уровень масштабирования от 0 (весь мир) до 19.
+  //   }, {
+  //     searchControlProvider: 'yandex#search'
 
-const reviewsSwiper = new Swiper('.reviews-slider', {
-  // Optional parameters
-  loop: true,
-  autoHeight: true,
+  //   })
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
-  },
+  //   myGeoObject = new ymaps.GeoObject({
 
-  // Keyboard Control Parameters
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
+  //     geometry: {
+  //       type: "Point",
+  //       coordinates: [55.8, 37.8]
+  //     },
 
-$('.parallax-window').parallax({ imageSrc: 'img/newsletter/newsletter_bg.jfif' });
+  //   });
 
-// // Создание интеркативной карты Яндекс API
-// ymaps.ready(init);
-
-// function init() {
-
-//   var myMap = new ymaps.Map("map", {
-
-//     center: [7.573638, 79.803867], // Координаты центра карты
-//     zoom: 10  // Уровень масштабирования от 0 (весь мир) до 19.
-//   }, {
-//     searchControlProvider: 'yandex#search'
-
-//   })
-
-//   myGeoObject = new ymaps.GeoObject({
-
-//     geometry: {
-//       type: "Point",
-//       coordinates: [55.8, 37.8]
-//     },
-
-//   });
-
-//   myMap.geoObjects
-//     .add(new ymaps.Placemark([7.577567, 79.794274], {
-//       balloonContent: 'Маленькая иконка'
-//     }, {
-//       iconLayout: 'default#image'
-//     }))
-// }
+  //   myMap.geoObjects
+  //     .add(new ymaps.Placemark([7.577567, 79.794274], {
+  //       balloonContent: 'Маленькая иконка'
+  //     }, {
+  //       iconLayout: 'default#image'
+  //     }))
+  // }
