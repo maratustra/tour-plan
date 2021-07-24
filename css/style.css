@@ -578,6 +578,7 @@ template {
   background-color: #EC1F46;
   color: #fff;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hotel-info__name {

@@ -1,11 +1,9 @@
 $(document).ready(function () {
-  let menuButton = document.querySelector('.menu-button');
 
-  menuButton.addEventListener('click', function () {
-    console.log('Click');
-    document
-      .querySelector('.navbar-bottom')
-      .classList.toggle('navbar-bottom--visible');
+  let menuButton = $('.menu-button');
+
+  menuButton.on('click', function () {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
   });
 
   const hotelSwiper = new Swiper('.hotel-slider', {
@@ -51,7 +49,7 @@ $(document).ready(function () {
 
   $('.parallax-window').parallax({ imageSrc: 'img/newsletter/newsletter_bg.jfif' });
 
-  // Подключение Модальных окон
+  // Modal Windows 
 
   let modalButton = $('[data-toggle="modal"]');
   let closeModalButton = $('.modal__close');
@@ -60,11 +58,10 @@ $(document).ready(function () {
   closeModalButton.on('click', closeModal);
 
   function openModal() {
-    let modalOverlay = $('.modal__overlay');
-    let modalDialog = $('.modal__dialog');
+    let targetModal = $(this).attr('data-href');
 
-    modalOverlay.addClass('modal__overlay--visible');
-    modalDialog.addClass('modal__dialog--visible');
+    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
+    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
   }
 
   function closeModal(event) {
