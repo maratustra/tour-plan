@@ -861,6 +861,7 @@ template {
 .main-package__left {
   padding: 0;
   overflow: hidden;
+  border-radius: 8px 0 0 8px;
 }
 
 .main-package__banner {
@@ -1011,7 +1012,7 @@ template {
   position: relative;
   height: 250px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
 .package-sample__image {
@@ -2015,7 +2016,7 @@ template {
   .main-package__left {
     height: 270px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
   }
   .main-package__banner {
     width: 100%;
