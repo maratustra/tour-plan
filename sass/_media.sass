@@ -546,6 +546,8 @@
       &__text
         text-align: left
   .footer
+    &__legal
+      margin-left: 0
     &__contact
       &-details
         width: 100%
@@ -558,33 +560,24 @@
 @media (max-width: 380px)
   .main
     &-package
-      &__button
-        margin-left: inherit
-      &__room
-        margin-bottom: 10px
       &__price
-        &-booknow
-          flex-direction: column
         &-pricetag
-          align-self: baseline
-          font-size: 18px
+          width: 50%
+          font-size: 20px
           line-height: 25px
-          margin-bottom: 12px
   .prices
-    &__booknow
-      flex-direction: column
     &__pricetag
-      align-self: baseline
-      font-size: 18px
+      width: 50%
+      align-self: center
+      font-size: 20px
       line-height: 25px
-      margin-bottom: 12px
-    &__button
-      margin-left: inherit
   .package
     &-sample
+      &__info
+        padding-top: 35px
       &__room
-        margin-top: 18px
-        margin-bottom: 18px
+        margin-top: 25px
+        margin-bottom: 30px
   .footer
     &__disclaimer
       &-item
