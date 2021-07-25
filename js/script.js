@@ -52,19 +52,22 @@ $(document).ready(function () {
   // Modal Windows 
 
   let modalButton = $('[data-toggle="modal"]');
-  let closeModalButton = $('.modal__close');
+  let closeModalButtonByClick = $('.modal__close');
+  let closeModalButtonByEsc = $('[data-toggle="modal"]');
 
   modalButton.on('click', openModal);
-  closeModalButton.on('click', closeModal);
+  closeModalButtonByClick.on('click', closeModalByMouse);
+  closeModalButtonByEsc.on('keydown', closeModalByEsc);
 
   function openModal() {
+
     let targetModal = $(this).attr('data-href');
 
     $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
     $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
   }
 
-  function closeModal(event) {
+  function closeModalByMouse(event) {
 
     event.preventDefault();
 
@@ -73,6 +76,19 @@ $(document).ready(function () {
 
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
+  }
+
+  function closeModalByEsc(event) {
+
+    if (event.key === 'Escape') {
+      event.preventDefault();
+
+      let modalOverlay = $('.modal__overlay');
+      let modalDialog = $('.modal__dialog');
+
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    }
   }
 });
 
