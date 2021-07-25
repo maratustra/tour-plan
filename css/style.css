@@ -2296,6 +2296,10 @@ template {
   .footer__legal {
     margin-left: 30px;
   }
+  .modal__dialog {
+    overflow: auto;
+    height: 100%;
+  }
   .modal__input {
     font-size: 13px;
   }
