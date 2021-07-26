@@ -2000,6 +2000,9 @@ template {
     -ms-grid-column: 2;
     grid-column: 2;
   }
+  .modal__dialog {
+    padding: 33px 70px;
+  }
   .modal__button {
     margin-bottom: 15px;
   }
@@ -2198,13 +2201,13 @@ template {
   }
   .main-package__room {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .main-package__icon {
     margin-right: 0;
   }
   .main-package__price {
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .main-package__price-pricetag {
     margin-bottom: 14px;
@@ -2298,7 +2301,8 @@ template {
   }
   .modal__dialog {
     overflow: auto;
-    height: 100%;
+    max-height: 67%;
+    padding: 30px 50px;
   }
   .modal__input {
     font-size: 13px;
@@ -2550,6 +2554,9 @@ template {
   .footer__payment-options {
     -ms-flex-item-align: baseline;
         align-self: baseline;
+  }
+  .modal__dialog {
+    padding: 40px 50px;
   }
   .modal__input {
     font-size: 11px;
