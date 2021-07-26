@@ -12,14 +12,20 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Сообщение для Best Tour Plan";
-$body = "
-<h2>Новое сообщение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Почта:</b> $email<br><br>
-<b>Сообщение:</b><br>$message
-";
+if ($email) {
+    $title = "Subscribing To Best Tour Plan";
+    $body = "
+    <b>Email:</b> $email
+    ";
+} else {
+    $title = "Message For Best Tour Plan";
+    $body = "
+    <h2>New Message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
