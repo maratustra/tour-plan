@@ -91,7 +91,7 @@ $(document).ready(function () {
     }
   }
 
-  // Обработка форм
+  // Validation Forms
 
   $('.form').each(function () {
     $(this).validate({
@@ -101,7 +101,10 @@ $(document).ready(function () {
           required: true,
           minlength: 2
         },
-        email: "required",
+        email: {
+          required: true,
+          email: true
+        },
         phone: "required"
       },
       messages: {
@@ -110,14 +113,30 @@ $(document).ready(function () {
           minlength: "Please enter at least 2 characters"
         },
         email: {
-          required: "Please specify your email address"
+          required: "Please specify your email address",
+          email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
           required: "Please specify your phone number"
         },
       }
     });
-  })
+  });
+
+  // Mask Plugin For Phone Numbers
+
+  $('.phone').mask('+0 (000) 000-00-00');
+
+  let maskBehavior = function (value) {
+    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : null;
+  },
+    spOptions = {
+      onKeyPress: function (value, e, field, options) {
+        field.mask(maskBehavior.apply({}, arguments), options);
+      }
+    };
+
+  $('.phone').mask(maskBehavior, spOptions);
 
 });
 
