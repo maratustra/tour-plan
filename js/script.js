@@ -123,6 +123,23 @@ $(document).ready(function () {
     });
   });
 
+  $('.newsletter__subscribe').validate({
+    errorClass: "failed",
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      email: {
+        required: "Please specify your email address",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+    }
+  });
+
+
   // Mask Plugin For Phone Numbers
 
   $('.phone').mask('+0 (000) 000-00-00');
