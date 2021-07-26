@@ -2201,13 +2201,13 @@ template {
   }
   .main-package__room {
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 25px;
   }
   .main-package__icon {
     margin-right: 0;
   }
   .main-package__price {
-    margin-left: 40px;
+    margin-left: 25px;
   }
   .main-package__price-pricetag {
     margin-bottom: 14px;
