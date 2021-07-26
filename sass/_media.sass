@@ -24,6 +24,8 @@
       flex-basis: 100%
     &__legal
       justify-self: end
+  .invalid
+    font-size: 13px
 
 @media (max-width: 992px)
   .container,
@@ -91,7 +93,8 @@
       grid-row-gap: 40px
       margin-bottom: 63px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       width: 104px
       grid-row: 1 / 2
@@ -333,13 +336,14 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__legal
       margin-left: 30px
   .modal
     &__dialog
       overflow: auto
-      max-height: 67%
+      max-height: 90%
       padding: 30px 50px
     &__input
       font-size: 13px

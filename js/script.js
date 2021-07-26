@@ -90,35 +90,34 @@ $(document).ready(function () {
       modalDialog.removeClass('modal__dialog--visible');
     }
   }
+
+  // Обработка форм
+
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: "required",
+        phone: "required"
+      },
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Please enter at least 2 characters"
+        },
+        email: {
+          required: "Please specify your email address"
+        },
+        phone: {
+          required: "Please specify your phone number"
+        },
+      }
+    });
+  })
+
 });
 
- // // Создание интеркативной карты Яндекс API
-  // ymaps.ready(init);
-
-  // function init() {
-
-  //   var myMap = new ymaps.Map("map", {
-
-  //     center: [7.573638, 79.803867], // Координаты центра карты
-  //     zoom: 10  // Уровень масштабирования от 0 (весь мир) до 19.
-  //   }, {
-  //     searchControlProvider: 'yandex#search'
-
-  //   })
-
-  //   myGeoObject = new ymaps.GeoObject({
-
-  //     geometry: {
-  //       type: "Point",
-  //       coordinates: [55.8, 37.8]
-  //     },
-
-  //   });
-
-  //   myMap.geoObjects
-  //     .add(new ymaps.Placemark([7.577567, 79.794274], {
-  //       balloonContent: 'Маленькая иконка'
-  //     }, {
-  //       iconLayout: 'default#image'
-  //     }))
-  // }
