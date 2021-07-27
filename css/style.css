@@ -34,6 +34,13 @@ img {
   border: none;
 }
 
+.button:active {
+  -webkit-box-shadow: 0 0 #EC1F46;
+          box-shadow: 0 0 #EC1F46;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
 .invalid {
   color: #EC1F46;
 }
@@ -43,6 +50,11 @@ img {
   top: 60px;
   font-weight: 600;
   color: #EC1F46;
+}
+
+.fadeInAnimation {
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

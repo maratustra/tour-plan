@@ -105,7 +105,11 @@ $(document).ready(function () {
           required: true,
           email: true
         },
-        phone: "required"
+        phone: {
+          required: true,
+          minlength: 18,
+          maxlength: 18
+        }
       },
       messages: {
         name: {
@@ -117,14 +121,15 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Please specify your phone number"
+          required: "Please specify your phone number",
+          minlength: "Your phone number must be at least 11 digits",
+          maxlength: "Your phone number must be 11 digits maximum"
         },
       }
     });
   });
 
   $('.newsletter__subscribe').validate({
-
     rules: {
       mail: {
         required: true,
@@ -134,7 +139,7 @@ $(document).ready(function () {
     messages: {
       mail: {
         required: "Please specify your email address",
-        mail: "Your email address must be in the format of name@domain.com"
+        email: "Your email address must be in the format of name@domain.com"
       },
     }
   });
@@ -145,11 +150,14 @@ $(document).ready(function () {
   $('.phone').mask('+0 (000) 000-00-00');
 
   let maskBehavior = function (value) {
-    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : null;
+    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : error;
   },
     spOptions = {
-      onKeyPress: function (value, e, field, options) {
-        field.mask(maskBehavior.apply({}, arguments), options);
+      onKeyPress: function (value, error, field, options) {
+        //let error = invalid[0];
+        console.log("Sorry");
+
+        //field.mask(maskBehavior.apply({}, arguments), options);
       }
     };
 
@@ -157,3 +165,26 @@ $(document).ready(function () {
 
 });
 
+// Other Packages block on scroll with the Intersection Observer
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+    const fadeInTitle = entry.target.querySelector('.packages__title');
+    const fadeInMain = entry.target.querySelector('.packages__main');
+    const fadeInSample = entry.target.querySelector('.package-sample');
+
+    if (entry.isIntersecting) {
+      fadeInTitle.classList.add('fadeInAnimation');
+      fadeInMain.classList.add('fadeInAnimation');
+      fadeInSample.classList.add('fadeInAnimation');
+      return;
+    }
+
+    fadeInTitle.classList.remove('fadeInAnimation');
+    fadeInMain.classList.remove('fadeInAnimation');
+    fadeInSample.classList.remove('fadeInAnimation');
+  });
+});
+
+observer.observe(document.querySelector('.packages-container'));

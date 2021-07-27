@@ -27,6 +27,11 @@ img
   padding: 18px 23px
   border: none
 
+.button
+  &:active
+    box-shadow: 0 0 $primary
+    transform: translateY(2px)
+
 .invalid
   color: $primary
 
@@ -36,3 +41,6 @@ img
     top: 60px
     font-weight: 600
     color: $primary
+
+.fadeInAnimation
+  animation: fadeIn 5s
