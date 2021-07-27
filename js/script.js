@@ -124,17 +124,17 @@ $(document).ready(function () {
   });
 
   $('.newsletter__subscribe').validate({
-    errorClass: "failed",
+
     rules: {
-      email: {
+      mail: {
         required: true,
-        email: true
+        mail: true
       },
     },
     messages: {
-      email: {
+      mail: {
         required: "Please specify your email address",
-        email: "Your email address must be in the format of name@domain.com"
+        mail: "Your email address must be in the format of name@domain.com"
       },
     }
   });
