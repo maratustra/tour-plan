@@ -38,9 +38,9 @@ img {
   color: #EC1F46;
 }
 
-.failed {
+#email-error {
   position: absolute;
-  margin-top: 60px;
+  top: 60px;
   font-weight: 600;
   color: #EC1F46;
 }
@@ -1183,7 +1183,6 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .newsletter .subscribe__input {
