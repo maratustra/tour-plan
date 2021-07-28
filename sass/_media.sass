@@ -36,7 +36,7 @@
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 30px
+      padding-bottom: 20px
     &__search
       margin-left: 47px
     &-menu
@@ -60,20 +60,32 @@
       flex-direction: row
   .booking
     width: 340px
+    padding: 27px 20px 29px 24px
   .location
     width: 340px
   .packages
     &-grid
       grid-template-columns: repeat(2, 1fr)
+  .newsletter
+    padding: 70px 0
   .reviews
+    padding: 18px 0 60px
     &-slider
       &__item
         max-width: 580px
     &__title
-      margin-bottom: 50px
+      margin-bottom: 45px
       font-size: 30px
       line-height: 38px
+    &__button
+      &--prev
+        left: 0
+        top: 180px
+      &--next
+        right: 4px
+        top: 180px
   .activities
+    padding: 60px 0 60px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -88,6 +100,7 @@
     &-grid
       max-width: 700px
   .footer
+    padding-top: 70px
     &-grid
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -475,13 +488,13 @@
       &-links
         margin-top: 22px
     &__additional
-      grid-row: 3
+      grid-row: 4
       margin-left: 0
     &__categories
-      grid-row: 4
+      grid-row: 5
       grid-column: 1
     &__legal
-      grid-row: 5
+      grid-row: 3
       grid-column: 1
       justify-self: start
       margin-left: 0
