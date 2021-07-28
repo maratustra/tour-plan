@@ -122,8 +122,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone number",
-          minlength: "Your phone number must be at least 11 digits",
-          maxlength: "Your phone number must be 11 digits maximum"
+          minlength: "Your phone number must be at least 11 digits"
         },
       }
     });
@@ -150,18 +149,10 @@ $(document).ready(function () {
   $('.phone').mask('+0 (000) 000-00-00');
 
   let maskBehavior = function (value) {
-    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : error;
-  },
-    spOptions = {
-      onKeyPress: function (value, error, field, options) {
-        //let error = invalid[0];
-        console.log("Sorry");
+    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : null;
+  };
 
-        //field.mask(maskBehavior.apply({}, arguments), options);
-      }
-    };
-
-  $('.phone').mask(maskBehavior, spOptions);
+  $('.phone').mask(maskBehavior);
 
 });
 

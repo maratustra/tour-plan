@@ -53,8 +53,8 @@ img {
 }
 
 .fadeInAnimation {
-  -webkit-animation: fadeIn 5s;
-          animation: fadeIn 5s;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

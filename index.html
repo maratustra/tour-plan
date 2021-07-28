@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
+    rel="preload">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -30,7 +30,7 @@
         </form>
 
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
-          <img src="img/header/user-avatar.jfif" alt="Avatar: Nathan" class="user__avatar">
+          <img src="img/header/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
         <!-- /.user -->
@@ -49,7 +49,7 @@
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
-              <img src="img/header/user-avatar.jfif" alt="Avatar: Nathan" class="user__avatar">
+              <img src="img/header/user.jpeg" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a>
           </li>
@@ -123,17 +123,17 @@
       <div class="hotel-grid">
         <div class="swiper-container hotel-slider hotel__slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_1.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_1.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_2.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_2.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_3.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_3.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_4.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_4.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_5.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_5.jpg"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slide_6.jpg"
+            <div class="swiper-slide hotel-slider__slide"><img class="hotel-slider__image" src="img/hotel/slider_6.jpg"
                 alt="slide"></div>
             ...
           </div>
@@ -198,7 +198,7 @@
         <!-- first (main) package -->
         <div class="main-package packages__main">
           <div class="main-package__left">
-            <img src="img/packages/package_card_1.jfif" alt="Picture: background" class="main-package__banner">
+            <img src="img/packages/package_card_1.jpeg" alt="Picture: background" class="main-package__banner">
             <span class="main-package__offer">Flash Offer</span>
           </div>
           <div class="main-package__right">
@@ -278,7 +278,7 @@
         <div class="package package-sample">
           <div class="package-sample__two">
             <div class="package-sample__top">
-              <img src="img/packages/package_card_4.jfif" alt="Picture: background" class="package-sample__image">
+              <img src="img/packages/package_card_3.jpeg" alt="Picture: background" class="package-sample__image">
               <span class="offer package-sample__offer">Flash Offer</span>
             </div>
             <div class="package-sample__bottom">
@@ -315,7 +315,7 @@
         <div class="package package-sample">
           <div class="package-sample__three">
             <div class="package-sample__top">
-              <img src="img/packages/package_card_5.jfif" alt="Picture: background" class="package-sample__image">
+              <img src="img/packages/package_card_4.jpeg" alt="Picture: background" class="package-sample__image">
               <span class="offer package-sample__offer">Flash Offer</span>
             </div>
             <div class="package-sample__bottom">
@@ -353,7 +353,7 @@
         <div class="package package-sample">
           <div class="package-sample__four">
             <div class="package-sample__top">
-              <img src="img/packages/package_card_6.jfif" alt="Picture: background" class="package-sample__image">
+              <img src="img/packages/package_card_5.jpeg" alt="Picture: background" class="package-sample__image">
               <span class="offer package-sample__offer">Flash Offer</span>
             </div>
             <div class="package-sample__bottom">
@@ -395,7 +395,7 @@
   </section>
   <!-- /.packages -->
 
-  <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter/newsletter_bg.jfif">
+  <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter/newsletter_bg.jpeg">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
@@ -420,7 +420,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img class="reviews-slider__avatar" src="img/reviews/avatar_1.jfif" alt="Photo: avatar">
+                <img class="reviews-slider__avatar" src="img/reviews/avatar_1.jpeg" alt="Photo: avatar">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -528,25 +528,25 @@
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card">
-          <img src="img/activities/activity_1.jfif" alt="Picture: activity" class="card__image">
+          <img src="img/activities/activity_1.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
-          <img src="img/activities/activity_2.jfif" alt="Picture: activity" class="card__image">
+          <img src="img/activities/activity_2.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
-          <img src="img/activities/activity_3.jfif" alt="Picture: activity" class="card__image">
+          <img src="img/activities/activity_3.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
-          <img src="img/activities/activity_4.jfif" alt="Picture: activity" class="card__image">
+          <img src="img/activities/activity_4.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
         </div>
@@ -708,7 +708,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.js/parallax.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/script.js"></script>
