@@ -459,6 +459,13 @@
     &__message
       font-size: 13px
 
+@media (max-width: 637px)
+  .footer
+    &__additional
+      padding-left: 0
+    &__legal
+      margin-left: -30px
+
 @media (max-width: 576px)
   .container
     width: 85%
@@ -704,14 +711,17 @@
 
 @media (max-width: 380px)
   .navbar
+    &-mobile
+      &--fixed
+        height: 70px
     &-top
-      padding-top: 21px
+      padding-top: 31px
       padding-bottom: 29px
   .container
     width: 87%
   .breadcrumb
     &-list
-      padding-top: 20px
+      padding-top: 11px
   .hotel
     padding-top: 20px
     &-description
