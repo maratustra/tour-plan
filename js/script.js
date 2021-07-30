@@ -16,7 +16,7 @@ $(document).ready(function () {
       prevEl: '.hotel-slider__button--prev',
     },
 
-    effect: 'coverflow',
+    //effect: 'coverflow',
     coverflowEffect: {
       rotate: 30,
       slideShadows: false,
@@ -65,6 +65,7 @@ $(document).ready(function () {
 
     $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
     $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
+    $('body').addClass('modal-open'); // switch off scroll when modal is open
   }
 
   function closeModalByMouse(event) {
@@ -76,6 +77,7 @@ $(document).ready(function () {
 
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
+    $('body').removeClass('modal-open'); // switch off scroll when modal is closed
   }
 
   function closeModalByEsc(event) {
@@ -149,33 +151,9 @@ $(document).ready(function () {
   $('.phone').mask('+0 (000) 000-00-00');
 
   let maskBehavior = function (value) {
-    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : null;
+    return value.replace(/\D/g, '').length === 11 ? '+0 (000) 000-00-00' : '+0 (000) 000-00-00';
   };
 
   $('.phone').mask(maskBehavior);
 
 });
-
-// Other Packages block on scroll with the Intersection Observer
-
-const observer = new IntersectionObserver(entries => {
-
-  entries.forEach(entry => {
-    const fadeInTitle = entry.target.querySelector('.packages__title');
-    const fadeInMain = entry.target.querySelector('.packages__main');
-    const fadeInSample = entry.target.querySelector('.package-sample');
-
-    if (entry.isIntersecting) {
-      fadeInTitle.classList.add('fadeInAnimation');
-      fadeInMain.classList.add('fadeInAnimation');
-      fadeInSample.classList.add('fadeInAnimation');
-      return;
-    }
-
-    fadeInTitle.classList.remove('fadeInAnimation');
-    fadeInMain.classList.remove('fadeInAnimation');
-    fadeInSample.classList.remove('fadeInAnimation');
-  });
-});
-
-observer.observe(document.querySelector('.packages-container'));

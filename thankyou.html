@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose the best hotels for your perfect vacation in Sri Lanka">
   <title>Best Tour Plan - Hotel Booking</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,10 +22,9 @@
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/header/horizontal_logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
@@ -42,6 +46,7 @@
       <!-- /.navbar-top -->
     </div>
     <!-- /.container -->
+
     <div class="navbar-bottom">
       <div class="container navbar-bottom__container">
         <ul class="navbar-menu">
@@ -73,6 +78,7 @@
     </div>
     <!-- /.navbar-bottom -->
   </header>
+
   <nav class="breadcrumb">
     <div class="container">
       <ul class="breadcrumb-list">
@@ -90,6 +96,7 @@
     <!-- /.container -->
   </nav>
   <!-- /.breadcrumb -->
+
   <section class="greetings">
     <div class="container">
       <div class="greetings-wrapper">
@@ -101,13 +108,14 @@
     </div>
   </section>
   <!-- /.hotel -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <a href="#" class="logo footer__logo"><img src="img/footer/vertical_logo.svg" alt="Logo: Best Tour Plan"
-            class="logo footer__logo"></a>
+        <a href="index.html" class="logo footer__logo"><img src="img/footer/vertical_logo.svg"
+            alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">All Categories</h3>
+          <h3 class="footer__title-categoties">All Categories</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -135,9 +143,12 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/footer/facebook.svg" alt="Icon: facebook"></a>
-            <a href="#" class="footer__link"><img src="img/footer/instagram.svg" alt="Icon: instagram"></a>
-            <a href="#" class="footer__link"><img src="img/footer/youtube.svg" alt="Icon: youtybe"></a>
+            <a href="https://www.facebook.com" class="footer__link"><img src="img/footer/facebook.svg"
+                alt="Icon: facebook"></a>
+            <a href="https://www.instagram.com" class="footer__link"><img src="img/footer/instagram.svg"
+                alt="Icon: instagram"></a>
+            <a href="https://www.youtube.com" class="footer__link"><img src="img/footer/youtube.svg"
+                alt="Icon: youtube"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -169,25 +180,39 @@
               <div class="footer__icon-wrapper">
                 <img class="footer-icon" src="img/footer/phone-call.svg" alt="Icon: phone numbers">
               </div>
-              Tel (business
-              hours) : 269 1500 <br /> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br /> Tel
-              (hotline) Sunday: 52-56-61-38 (08:00 am
-              – 14:00 pm)
+              <div class="footer__tel-wrapper">
+                <span>Tel (business hours):<a class="footer-tel" href="tel:2691500"> 269 1500</a></span><br />
+                <span>Tel (hotline) Monday - Saturday:<a class="footer-tel" href="tel:52566138"> 52-56-61-38</a> (08:00
+                  am
+                  –
+                  20:00
+                  pm)</span><br />
+                <span>Tel
+                  (hotline) Sunday:<a class="footer-tel" href="tel:52566138"> 52-56-61-38</a> (08:00 am
+                  – 14:00 pm)</span>
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer-icon" src="img/footer/email.svg" alt="Icon: email address">
-              </div>cherly.lawson@example.com
+              </div>
+              <span><a class="footer-mail" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></span>
             </li>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            </div>
+            <!-- /.footer__input-group -->
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone">
+            </div>
+            <!-- /.footer__input-group -->
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="footer__form-button">
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -209,7 +234,7 @@
         </div>
         <!-- /.footer__disclaimer -->
         <div class="footer__payment-options">
-          <img src="img/footer/payment_cards.png" alt="#" class="footer__payment">
+          <img src="img/footer/payment_cards.png" alt="Picture: payment cards" class="footer__payment">
         </div>
         <!-- /.footer__payment-options -->
       </div>
@@ -218,9 +243,36 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email">
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <div class="modal__form-button">
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.js/parallax.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

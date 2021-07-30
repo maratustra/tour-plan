@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Choose the best hotels for your perfect vacation in Sri Lanka">
   <title>Best Tour Plan - Hotel Booking</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="preload" as="style">
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preload" href="css/style.css" as="style">
@@ -19,10 +19,10 @@
 </head>
 
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar-mobile navbar-mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/header/horizontal_logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -57,7 +57,7 @@
             </a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-            <form action="#" class="search navbar__search navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
                 <img src="img/header/search.svg" alt="Icon: search">
@@ -103,11 +103,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars-size">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars-size">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars-size">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars-size">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars-size">
             </div>
             <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
@@ -148,7 +148,7 @@
           <div class="booking">
             <div class="booking__info">
               <div class="booking__price">
-                <span class="booking__start">price start as</span>
+                <span class="booking__start">price starts as</span>
                 <strong class="booking__pricetag">$ 8,500</strong>
                 <span class="booking__per-room">per room / night</span>
               </div>
@@ -206,11 +206,11 @@
           </div>
           <div class="main-package__right">
             <div class="stars">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
-              <img src="img/hotel/star.svg" alt="Icon: star">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars__mr">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars__mr">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars__mr">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars__mr">
+              <img src="img/hotel/star.svg" alt="Icon: star" class="stars__mr">
             </div>
             <span class="main-package__heading">Hotel Blue Haven</span>
             <p class="main-package__paragraph">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
@@ -237,7 +237,8 @@
               <span class="main-package__price-start">$ 10,500</span>
               <div class="main-package__price-booknow">
                 <strong class="main-package__price-pricetag">$ 8,500</strong>
-                <button class="button main-package__button">Book Now</button>
+                <button data-toggle="modal" data-href="#booking-modal" class="button main-package__button">Book
+                  Now</button>
               </div>
             </div>
           </div>
@@ -270,7 +271,8 @@
                   <span class="prices__start">$ 8,500</span>
                   <div class="prices__booknow">
                     <strong class="prices__pricetag">$ 3,000</strong>
-                    <button class="button prices__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="button prices__button">Book
+                      Now</button>
                   </div>
                 </div>
               </div>
@@ -305,7 +307,8 @@
                   <span class="prices__start">$ 10,500</span>
                   <div class="prices__booknow">
                     <strong class="prices__pricetag">$ 9,500</strong>
-                    <button class="button prices__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="button prices__button">Book
+                      Now</button>
                   </div>
                 </div>
                 <!-- package__price -->
@@ -342,7 +345,8 @@
                   <span class="prices__start">$ 4,500</span>
                   <div class="prices__booknow">
                     <strong class="prices__pricetag">$ 2,500</strong>
-                    <button class="button prices__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="button prices__button">Book
+                      Now</button>
                   </div>
                 </div>
                 <!-- package__price -->
@@ -361,7 +365,7 @@
             </div>
             <div class="package-sample__bottom">
               <div class="package-sample__info">
-                <span class="package-sample__heading">Hotel Five Stars</span>
+                <span class="package-sample__heading">Hotel Five Star</span>
                 <div class="package-sample__room">
                   <div class="package-sample__text">
                     <img src="img/packages/map-pin.svg" alt="Icon: person" class="package-sample__icon">
@@ -380,7 +384,8 @@
                   <span class="prices__start">$ 6,500</span>
                   <div class="prices__booknow">
                     <strong class="prices__pricetag">$ 3,500</strong>
-                    <button class="button prices__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="button prices__button">Book
+                      Now</button>
                   </div>
                 </div>
                 <!-- package__price -->
@@ -427,11 +432,11 @@
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
-                  <img src="img/hotel/star.svg" alt="Icon: star">
-                  <img src="img/hotel/star.svg" alt="Icon: star">
-                  <img src="img/hotel/star.svg" alt="Icon: star">
-                  <img src="img/hotel/star.svg" alt="Icon: star">
-                  <img src="img/hotel/star.svg" alt="Icon: star">
+                  <img src="img/hotel/star.svg" alt="Icon: star" class="reviews-stars">
+                  <img src="img/hotel/star.svg" alt="Icon: star" class="reviews-stars">
+                  <img src="img/hotel/star.svg" alt="Icon: star" class="reviews-stars">
+                  <img src="img/hotel/star.svg" alt="Icon: star" class="reviews-stars">
+                  <img src="img/hotel/star.svg" alt="Icon: star" class="reviews-stars">
                 </div>
               </div>
               <!-- /.reviews-slider__profile -->
@@ -530,28 +535,28 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card activities__card-one">
           <img src="img/activities/activity_1.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card activities__card-two">
           <img src="img/activities/activity_2.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card activities__card-three">
           <img src="img/activities/activity_3.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card activities__card-four">
           <img src="img/activities/activity_4.jpeg" alt="Picture: activity" class="card__image">
           <h3 class="card__title">The&nbsp;blue&nbsp;marine&nbsp;discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -564,10 +569,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <a href="#" class="logo footer__logo"><img src="img/footer/vertical_logo.svg" alt="Logo: Best Tour Plan"
-            class="logo footer__logo"></a>
+        <a href="index.html" class="logo footer__logo"><img src="img/footer/vertical_logo.svg"
+            alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">All Categories</h3>
+          <h3 class="footer__title-categoties">All Categories</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -581,7 +586,7 @@
         </div>
         <!-- footer__list -->
         <div class="footer__list footer__additional">
-          <h3 class="footer__title">Additional Information</h3>
+          <h3 class="footer__title-additional">Additional Information</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
@@ -595,9 +600,12 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/footer/facebook.svg" alt="Icon: facebook"></a>
-            <a href="#" class="footer__link"><img src="img/footer/instagram.svg" alt="Icon: instagram"></a>
-            <a href="#" class="footer__link"><img src="img/footer/youtube.svg" alt="Icon: youtube"></a>
+            <a href="https://www.facebook.com" class="footer__link"><img src="img/footer/facebook.svg"
+                alt="Icon: facebook"></a>
+            <a href="https://www.instagram.com" class="footer__link"><img src="img/footer/instagram.svg"
+                alt="Icon: instagram"></a>
+            <a href="https://www.youtube.com" class="footer__link"><img src="img/footer/youtube.svg"
+                alt="Icon: youtube"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -618,7 +626,7 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer-icon" src="img/footer/map-marker.svg" alt="Icon: map">
+                <img class="footer__icon-map" src="img/footer/map-marker.svg" alt="Icon: map">
               </div>
               9748
               Blossom Hill Rd undefined
@@ -627,23 +635,35 @@
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer-icon" src="img/footer/phone-call.svg" alt="Icon: phone numbers">
+                <img class="footer__icon-phone" src="img/footer/phone-call.svg" alt="Icon: phone numbers">
               </div>
-              Tel (business
-              hours) : 269 1500 <br /> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br /> Tel
-              (hotline) Sunday: 52-56-61-38 (08:00 am
-              – 14:00 pm)
+              <div class="footer__tel-wrapper">
+                <span>Tel (business hours):<a class="footer-tel" href="tel:2691500">&nbsp;&nbsp;269
+                    1500</a></span><br />
+                <span>Tel (hotline) Monday - Saturday:<a class="footer-tel" href="tel:52566138">
+                    52&#8209;56&#8209;61&#8209;38
+                  </a>
+                  (08:00
+                  am
+                  –
+                  20:00
+                  pm)</span><br />
+                <span>Tel
+                  (hotline) Sunday:<a class="footer-tel" href="tel:52566138"> 52-56-61-38</a> (08:00 am
+                  – 14:00 pm)</span>
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer-icon" src="img/footer/email.svg" alt="Icon: email address">
-              </div>cherly.lawson@example.com
+                <img class="footer__icon-email" src="img/footer/email.svg" alt="Icon: email address">
+              </div>
+              <span><a class="footer-mail" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></span>
             </li>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+          <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">

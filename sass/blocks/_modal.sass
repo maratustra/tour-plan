@@ -29,6 +29,7 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    max-height: 90%
     &--visible
       visibility: visible
       opacity: 1
@@ -54,10 +55,12 @@
   &__input
     width: 100%
     margin-top: 15px
+    padding-left: 15px
   &__message
     width: 100%
     min-height: 123px
     margin-top: 15px
+    padding-left: 15px
   &__button
     min-width: 160px
     min-height: 50px
@@ -76,3 +79,5 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &-open
+    overflow: hidden
